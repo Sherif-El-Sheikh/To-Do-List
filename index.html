@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="Assets/img/icons8-to-do-list-64.png">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <!-- Font Awsome Library -->
+        <link rel="stylesheet" href="Css/all.min.css">
+        <!-- Bootstrap Stylesheet -->
+        <link rel="stylesheet" href="Css/bootstrap.min.css">
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container position-relative bg-white rounded-3">
+            <div class="input-field position-relative w-100">
+                <h2 class="pb-1">
+                    <i class="fas fa-clipboard-check"></i>
+                    To-do List
+                </h2>
+                <div class="add d-flex mt-3">
+                    <textarea class="form-control h-100" placeholder="Enter your new tasks"></textarea>
+                    <button class="btn btn-primary my-auto" type="button" id="addBtn">
+                        <i class="fa-solid fa-plus fs-5"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <ul class="todoLists list-unstyled">
+            </ul>
+            
+    <div class="pending-tasks d-flex justify-content-between align-content-center mt-4">
+        <span>You have <span class="pending-num"> no </span> tasks pending.</span>
+        <button class=" btn btn-primary clear-button">Clear All</button>
+    </div>
+        </div>
+    </main>
+
+
+    <script src="Js/sweetalert2.all.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
