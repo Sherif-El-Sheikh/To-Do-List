@@ -73,7 +73,7 @@ function display() {
         // add draggable attribute and id to the list items
         liTag += ` <li class="list ${pending ? "pending" : ""}" onclick="handleStatus(this)" draggable="true" id="item-${i}">
         <input type="checkbox" ${checked ? "checked" : ""}/>
-        <span class="task">${tasksList[i].name}</span>
+        <span class="task d-flex">${tasksList[i].name}</span>
         <i class="fa-solid fa-trash text-danger" onclick="deleteTask(${i})"></i>
         </li>`;
     }

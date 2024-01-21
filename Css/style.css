@@ -30,7 +30,7 @@ body {
 
 .container {
     max-width: 580px;
-    margin: 50px auto 0;
+    margin: 40px auto 8px;
     --bs-gutter-x: 3.44rem;
     --bs-gutter-y: 3.44rem;
     padding-block: calc(var(--bs-gutter-x) * .5);
@@ -139,7 +139,7 @@ textarea::-webkit-scrollbar {
     pointer-events: none;
     position: absolute;
     right: calc(1.4em + .1875rem);
-    top: 50%;
+    top: 100%;
     background-color: #707070;
     border-color: #707070;
 }
@@ -154,6 +154,7 @@ textarea::-webkit-scrollbar {
     max-height: 380px;
     overflow-y: auto;
     padding-right: 10px;
+    margin-top: 60px;
 }
 
 .todoLists .list {
